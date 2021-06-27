@@ -10,11 +10,11 @@
 
 - To login, send a POST request to /user/login with a body which has email and passport fields. In the successful case, you will receive a 200 Ok response with a JWT.
 
-![login screen](https://github.com/ipz201svo/BtcWebAPI/blob/master/Screenshots\login.png)
+![login screen](https://github.com/ipz201svo/BtcWebAPI/blob/master/Screenshots/login.png)
 
 - To get a current BTC rate, send a GET request to /btcRate with a header which contain Authorization field with a value that is a JWT you have got while login.
 
-![btcRate screen](https://github.com/ipz201svo/BtcWebAPI/blob/master/Screenshots\btcRate.png)
+![btcRate screen](https://github.com/ipz201svo/BtcWebAPI/blob/master/Screenshots/btcRate.png)
 
 ## Documentation
 
