@@ -28,14 +28,14 @@ router.post('/login', function (req, res, next) {
 });
 
 router.post('/create', function (req, res, next) {
+    if (!utils.validateEmail(req.body.email)) {
+        return res.json({ success: false, msg: 'Not valid email' });
+    }
 
     if (domain.findUser("email", req.body.email)) {
         return res.json({ success: false, msg: 'Email is already taken' });
     }
 
-    if (!utils.validateEmail(req.body.email)) {
-        return res.json({ success: false, msg: 'Not valid email' });
-    }
 
     const saltHash = utils.genPassword(req.body.password);
 
