@@ -6,15 +6,15 @@
 
 - To create a new user, send a POST request to /user/create with a body which has email and passport fields. In the successful case, you will receive a 200 Ok response with hashed password, salt, email and id.
 
-![create screen](https://drive.google.com/file/d/1BbuZ7dcUMRXFh3EFNoFWa6g1CfSRZArH/view?usp=sharing)
+![create screen](Screenshots\create.png)
 
 - To login, send a POST request to /user/login with a body which has email and passport fields. In the successful case, you will receive a 200 Ok response with a JWT.
 
-![login screen](https://drive.google.com/file/d/1hkKA39W8UkST5W9euSzygdDGgdS-GkMR/view?usp=sharing)
+![login screen](Screenshots\login.png)
 
 - To get a current BTC rate, send a GET request to /btcRate with a header which contain Authorization field with a value that is a JWT you have got while login.
 
-![btcRate screen](https://drive.google.com/file/d/1QECg5CZBZxHc1WgZm2JGC1QBB008A9vx/view?usp=sharing)
+![btcRate screen](Screenshots\btcRate.png)
 
 ## Documentation
 
